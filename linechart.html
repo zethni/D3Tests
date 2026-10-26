@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Next Iteration - Exploration - NBA Homecourt</title>
+    <script type="module" src="../NILineChart/ni-linechart.js"></script>
+    <meta name="view-transition" content="same-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <ni-linechart id="linechart" tooltipfield="tooltip"></ni-linechart>
+
+    <script>
+      const linechart = document.getElementById("linechart");
+      linechart.setAttribute(
+        "data",
+        JSON.stringify([
+          {
+            date: "2026-07-13",
+            value: 604,
+            tooltip: "2026-07-13: 604"
+          },
+          {
+            date: "2026-07-20",
+            value: 877,
+            tooltip: "2026-07-20: 877"
+          },
+          {
+            date: "2026-07-27",
+            value: 1828,
+            tooltip: "2026-07-27: 1828"
+          },
+          {
+            date: "2026-08-03",
+            value: 285,
+            tooltip: "2026-08-03: 285"
+          },
+          {
+            date: "2026-08-10",
+            value: 1083,
+            tooltip: "2026-08-10: 1083"
+          },
+          {
+            date: "2026-08-17",
+            value: 194,
+            tooltip: "2026-08-17: 194"
+          },
+          {
+            date: "2026-08-24",
+            value: 1304,
+            tooltip: "2026-08-24: 1304"
+          },
+          {
+            date: "2026-08-31",
+            value: 830,
+            tooltip: "2026-08-31: 830"
+          },
+          {
+            date: "2026-09-07",
+            value: 466,
+            tooltip: "2026-09-07: 466"
+          },
+          {
+            date: "2026-09-14",
+            value: 1440,
+            tooltip: "2026-09-14: 1440"
+          },
+          {
+            date: "2026-09-21",
+            value: 930,
+            tooltip: "2026-09-21: 930"
+          },
+          {
+            date: "2026-09-28",
+            value: 330,
+            tooltip: "2026-09-28: 330"
+          },
+          {
+            date: "2026-10-05",
+            value: 450,
+            tooltip: "2026-10-05: 450"
+          },
+          {
+            date: "2026-10-12",
+            value: 270,
+            tooltip: "2026-10-12: 270"
+          },
+          {
+            date: "2026-10-19",
+            value: 315,
+            tooltip: "2026-10-19: 315"
+          }
+        ])
+      );
+      const scatterplot = document.getElementById("scatterplot");
+      scatterplot.setAttribute(
+        "data",
+        JSON.stringify([
+          {
+            x: 1,
+            y: 2,
+            tooltip: "1, 2"
+          },
+          {
+            x: 3,
+            y: 4,
+            tooltip: "3, 4"
+          }
+        ])
+      );
+    </script>
+  </body>
+</html>

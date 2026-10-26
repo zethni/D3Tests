@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Next Iteration - Exploration - NBA Homecourt</title>
+    <script type="module" src="../NIScatterPlot/ni-scatterplot.js"></script>
+
+    <meta name="view-transition" content="same-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <ni-scatterplot
+      id="scatterplot"
+      xkey="overallPercentageHome"
+      ykey="difference"
+      tooltipfield="tooltip"
+      tooltipposition="side"
+      dotsize="2"
+      highlightdotsize="5"
+      ratio="1.5"
+      xlabel="Overall Percentage"
+      ylabel="Home Percentage"
+      highlightfield="team"
+      highlightvalue="DENVER NUGGETS"
+      highlightselectorText="Highlighted Team"
+      highlighttoggle="true"
+    ></ni-scatterplot>
+
+    <script async type="module">
+      import { scatterData } from "./scatterData.js";
+      const scatterPlot = document.getElementById("scatterplot");
+      scatterPlot.setAttribute("data", JSON.stringify(scatterData));
+    </script>
+  </body>
+</html>
