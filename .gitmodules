@@ -1,3 +1,6 @@
 [submodule "NILineChart"]
 	path = NILineChart
 	url = git@github.com:zethni/NILineChart.git
+[submodule "NIScatterPlot"]
+	path = NIScatterPlot
+	url = git@github.com:zethni/NIScatterPlot
