@@ -4,3 +4,6 @@
 [submodule "NIScatterPlot"]
 	path = NIScatterPlot
 	url = git@github.com:zethni/NIScatterPlot
+[submodule "NITable"]
+	path = NITable
+	url = git@github.com:zethni/NITable
